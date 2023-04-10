@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tela Inicial Premen</title>
+</head>
+<body>
+    <header>
+        <div class="navigation-bar">
+            <a href="#premen" class="nav-items">Conheça o Premen</a>
+            <a href="#devsist" class="nav-items">Conheça o Curso</a>
+            <a href="#materias" class="nav-items">Matérias</a>
+            <a href="#contact" class="nav-items">Entre em Contato</a>
+
+            
+            <ion-icon class="btn-menu" name="reorder-two-outline"></ion-icon>
+            <div class="area-login">
+                <a class="btn-login">Login<ion-icon class="icon-login" name="log-in-outline"></ion-icon></a>
+                <!-- <div class="login-inputs">
+                    <a href="">Entrar como Aluno</a>
+                    <a href="">Entrar como Professor</a>
+                </div> -->
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <ion-icon id="btn-up" name="arrow-up-outline"></ion-icon>
+        <section class="section-imgsist" id="initial-home">
+            <p>Formando Técnicos em</p>
+            <div class="sist-area">
+                <img style="width: 25vw;" src="sistemas-img.png" alt="" >
+                <h1 class="sist-tls titles"><i>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</i></h1>
+           </div>
+        </section>
+
+        <section class="section-devsist" id="devsist">
+            <h3 style="font-weight: 400;">Sobre o Curso:</h3>
+            <h1 style="margin: 0 0 10% 0;">Desenvolvimento de Sistemas</h1>
+            <p>O Técnico em Desenvolvimento de Sistemas desenvolve programas para computadores e outros dispositivos computacionais como, por exemplo, aparelhos celulares e tablets, visando a automação de todos os processos relativos às Tecnologias de Informação e Comunicação (TIC), ou seja, seu trabalho envolve a produção de software.</p>
+        </section>
+
+        <section class="section-cursos dragscroll" id="materias">
+            <h1>Cursos:</h1>
+            
+            <div class="hover-exp">Segure e Arraste essa área para o lado!</div>
+            <div class="cursos-area dragscroll" alt>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+                <div class="cursos-box">
+                    <ion-icon name="server-outline"></ion-icon>
+                    <p>Banco de Dados</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-devsist" id="devsist">
+            <h3 style="font-weight: 400;">Sobre o Curso:</h3>
+            <h1 style="margin: 0 0 10% 0;">Desenvolvimento de Sistemas</h1>
+            <p>O Técnico em Desenvolvimento de Sistemas desenvolve programas para computadores e outros dispositivos computacionais como, por exemplo, aparelhos celulares e tablets, visando a automação de todos os processos relativos às Tecnologias de Informação e Comunicação (TIC), ou seja, seu trabalho envolve a produção de software.</p>
+        </section>
+
+    </main>
+    
+</body>
+
+<script>
+    var btn = document.querySelector("#btn-up");
+        btn.addEventListener("click", function() {
+    window.scrollTo(0, 0);
+    });
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
+</html>
