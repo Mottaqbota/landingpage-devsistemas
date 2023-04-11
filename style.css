@@ -25,6 +25,7 @@ html, body {
     --light-graycolor: #D9D9D9;
     --light-blackcolor: #02111C;
     --light-contrastcolor-black: #293177;
+    --light-extra-blackcolor: #001f36;
 
     /* Mode Dark */
 }
@@ -169,7 +170,20 @@ header {
         flex-direction: column;
         transform: scale(1.5);
     }
+
+    .cursos-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .cursos-box {
+        width: 100vw;
+    }
 }
+
+/* Lateral Bar Button */
 
 .btn-menu {
     position: absolute;
@@ -201,9 +215,12 @@ section {
     border-bottom: solid 2px var(--light-contrastcolor-black);
 }
 
+
 .titles {
     font-size: 5vw;
 }
+
+/* Section Dev Sist */
 
 .section-imgsist {
     display: flex;
@@ -236,7 +253,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
 
     text-align: center;
@@ -246,6 +262,8 @@ section {
 
 }
 
+
+/* Section Cursos */
 .section-cursos {
     display: flex;
     align-items: center;
@@ -256,41 +274,39 @@ section {
     margin: 5%;
 }
 
-.hover-exp {
-    overflow: hidden;
-}
-
 .cursos-area {
-    cursor: all-scroll;
-    overflow-x: scroll;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
     
-    
-    gap: 2%;
-    width: 90vw;
-    height: 40vh;
+    overflow-y: scroll;
+
     padding: 2vw;
+    width: 90vw;
+    height: 90vh;
     border-radius: 10px;
-    box-shadow: inset 0px 2px 10px 0px var(--shadows-black);    overflow-x: scroll;
+    background-color: var(--light-graycolor);
+    box-shadow: inset 0px 2px 10px 0px var(--shadows-black);    
     
 }
-.cursos-area:hover .hover-exp {
-    overflow: visible;
-}
+
 
 
 
 
 .cursos-box ion-icon {
     color: var(--light-graycolor);
-    background-color: var(--light-blackcolor);
+    /* background-color: var(--light-contrastcolor-black); */
     border-radius: 10px;
     font-size: 68px;
     padding: 10px;
 }
-
+.cursos-box p {
+    color: var(--light-graycolor);
+}
 .cursos-box {
     display: flex;
     align-items: center;
@@ -299,20 +315,37 @@ section {
     flex-direction: column;
     
     
-    width: 10vw;
-    height: 150px;
+    width: 15vw;
+    height: 25vh;
     
     transition: all 0.3s;
-    font-weight: 700;
+    font-weight: 400;
+    border-radius: 10px;
+    border-bottom: solid 5px var(--light-extra-blackcolor);
     color: var(--light-blackcolor);
-    /* background-color: var(--light-blackcolor); */
+    /* box-shadow: 0px 5px 2px 0px var(--shadows-black);     */
+    background-color: var(--light-blackcolor);
 }
-.cursos-box:hover {
+.cursos-box:hover{
     cursor: pointer;
     transform: scale(1.2);
-    opacity: 0.85;
+    background-color: var(--light-extra-blackcolor);
+    /* background-color:var(--light-contrastcolor-black); */
 }
-
+.cursos-box:hover > .btn-sobre {
+    display: block;
+}
+.btn-sobre {
+    font-weight: 700;
+    display: none;
+    
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    color: var(--light-blackcolor);
+}
 
 
 
