@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="frontend.css">
+    <title>Tela Inicial Premen</title>
+</head>
+<body>
+    <header>
+        <div class="navigation-bar">
+            <a href="#" class="nav-items">Voltar a Página Principal</a>
+            <a href="#" class="nav-items">Sobre a Matéria</a>
+
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <ion-icon id="btn-up" name="arrow-up-outline"></ion-icon>
+        <section class="section-frontend">
+            <img class="img-frontend" src="https://blog.b2bstack.com.br/wp-content/uploads/2022/01/front-end-banner.jpg" alt="">
+        </section>
+        
+        <section class="section-what">
+            <div class="card">
+                <h1 class="titulos">Front-End</h1>
+                <h3 style="margin: 0 0 20px 0; font-size: 36px; font-weight: 600;">Introdução</h3>
+                <p>Front End ou Back End developer são termos para diferenciar onde uma pessoa que programa acaba se especializando. Se você está entrando no mundo do Desenvolvimento, muito provavelmente classifica todo mundo como programador e programadora, mas os sistemas se tornaram tão complexos que precisamos que cada um seja responsável por partes específicas de uma aplicação.</p>
+            </div>
+
+            <div class="card">
+                <h3 style="margin: 0 0 20px 0; font-size: 36px; font-weight: 600;">O que é <strong>Front-End?</strong> </h3>
+                <p>O que é Front End? Podemos classificar como a parte visual de um site, aquilo que conseguimos interagir. Quem trabalha com Front End é responsável por desenvolver por meio do código uma interface gráfica e, normalmente, com as tecnologias base da Web: HTML, CSS e JavaScript.</p>
+            </div>
+            <div class="card">
+                <h3 style="margin: 0 0 20px 0; font-size: 36px; font-weight: 600;">O que é <strong>Back-End?</strong> </h3>
+                <p>Como o próprio nome sugere, vem da ideia daquilo que tem por trás de uma aplicação. Pode ficar meio abstrato num primeiro momento, mas pense que para conseguir usar o Facebook no dia a dia, os dados (as informações) do seu perfil, amigos e publicações precisam estar salvos em algum lugar e serem processados a partir dele, sendo este lugar um banco de dados.</p>
+            </div>
+            
+        </section>
+    </main>
+
+</body>
+<script>
+    var btn = document.querySelector("#btn-up");
+        btn.addEventListener("click", function() {
+    window.scrollTo(0, 0);
+    });
+
+</script>
+</html>
