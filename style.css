@@ -350,6 +350,36 @@ section {
 
 
 
+.section-premen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+}
+
+.container-premen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px;
+    width: 50vw;
+    height: 80vh;
+    border-radius: 10px;
+    background-color: var(--light-blackcolor);
+}
+
+.container-textpremen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+}
+
 
 
 
